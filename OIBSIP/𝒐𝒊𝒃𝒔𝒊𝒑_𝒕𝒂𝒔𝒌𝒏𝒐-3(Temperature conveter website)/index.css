@@ -1,124 +1,92 @@
-:root {
-    --primary-color: #007B84;
-    --secondary-color: #00565C;
+body {
+  background-color: #8baeca;
+}
+.container {
+max-width: 600px;
+  margin: 0 auto;
+  padding: 50px;
+  text-align: center;
+  background-color: #ccc;
+  border: 2px solid #000;
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px 3px #222;
+  animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 1s;
+  -moz-animation: fadeIn ease 1s;
+  -o-animation: fadeIn ease 1s;
+  -ms-animation: fadeIn ease 1s;
+}
+
+h1 {
+margin-bottom: 30px;
+color: #222;
+}
+
+form {
+max-width: 400px;
+margin: 0 auto;
+}
+
+.form-group {
+text-align: left;
+margin-top: 20px;
+}
+
+label {
+display: block;
+color: #222;
+}
+
+input,
+select {
+width: 100%;
+padding: 8px;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+
+button {
+margin-top: 20px;
+padding: 10px 20px;
+background-color: #4CAF50;
+color: #fff;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+button:hover {
+background-color: #3e8e41;
+}
+
+#output {
+margin-top: 30px;
+  display: none;
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 3px #ccc;
+}
+
+#output p {
+font-size: 24px;
+font-weight: 700;
+color: #fff;
+}
+@-webkit-keyframes fadeIn {
+  0% {
+      opacity: 0;
   }
-  
-  body {
-    color: var(--secondary-color);
+  100% {
+      opacity: 1;
   }
-  
-  .card {
-    padding: 20px 0px;
-    border: 4px var(--primary-color) solid;
-    border-radius: 10px;
+}
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
   }
-  
-  /* Input Section */
-  
-  .card-title {
-    font-size: 24px;
-    padding: 20px 0px;
-    font-weight: 600;
+  100% {
+      opacity: 1;
   }
-  
-  label {
-    font-weight: 500;
-  }
-  
-  select {
-    margin-bottom: 40px;
-  }
-  
-  #selectInputDegreeType {
-    border-radius: 0px 3px 3px 0px;
-  }
-  
-  
-  .convertBtn {
-    min-width: 10px;
-    background-color: var(--primary-color);
-  
-  
-  }
-  
-  .convertBtn:hover {
-    transition: 0.5s;
-    background-color: var(--secondary-color);
-  }
-  
-  /* Result Section */
-  
-  #resultValueSection {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 500px;
-    height: 200px;
-    word-wrap: normal;
-    text-align: center;
-    font-size-adjust: 0.58;
-  
-  }
-  
-  #convertedDegree {
-    font-size: 65px;
-    font-weight: 500;
-    max-width: 500px;
-  }
-  
-  #convertedUnit,
-  #degree {
-    padding-bottom: 70px;
-  }
-  
-  .resultSection {
-    background-color: var(--primary-color);
-    color: white;
-  }
-  
-  
-  
-  
-  /* Mobile view  */
-  @media only screen and (max-width: 600px) {
-  
-    body {
-      display: relative;
-      overflow: hidden;
-    }
-  
-    .card-group {
-      padding: 0;
-    }
-  
-    .card {
-      border: none;
-      border-radius: 0;
-      padding: 0;
-    }
-  
-    .card-title {
-      line-height: 40px;
-    }
-  
-    .card-body {
-      padding: 0;
-    }
-  
-    .resultSection {
-      position: fixed;
-      top: 0;
-      padding: 10px 0px;
-      text-align: center;
-    }
-  
-    .inputSection {
-      margin-top: 60%;
-    }
-  
-    #degree,
-    #convertedUnit {
-      padding-top: 50px;
-    }
-  
-  }
+}
+
